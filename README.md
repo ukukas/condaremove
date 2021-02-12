@@ -17,7 +17,7 @@ To run the script, run the following commands in an elevated (administrator) Pow
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ukukas/condaremove/main/condaremove.ps1"
-Invoke-Expression .\condaremove.ps1
-Remove-Item .\condaremove.ps1
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ukukas/condaremove/main/condaremove.ps1" -OutFile "~\condaremove.ps1"
+Invoke-Expression ~\condaremove.ps1
+Remove-Item ~\condaremove.ps1
 ```
